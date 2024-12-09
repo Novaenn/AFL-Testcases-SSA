@@ -1,0 +1,6 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=convert
+AFL_CUSTOM_INFO_PROGRAM_ARGV=@@ convoutput.png
+AFL_CUSTOM_INFO_OUT=convert_testcases_cmin_out//fuzzyM
+# command line:
+'afl-fuzz' '-i' '-' '-o' 'convert_testcases_cmin_out/' '-M' 'fuzzyM' 'convert' '@@' 'convoutput.png'
